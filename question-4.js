@@ -1,7 +1,7 @@
 function sortProductsByPrice(products) {
   // Your code here
-  for (i = 0; i < products.length - 1; i++) {
-    for (j = 0; j < products.length - 1 - i; j++) {
+  for (let i = 0; i < products.length - 1; i++) {
+    for (let j = 0; j < products.length - 1 - i; j++) {
       if (products[j].price > products[j + 1].price) {
         let temp = products[j];
         products[j] = products[j + 1];

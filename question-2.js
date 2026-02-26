@@ -7,7 +7,7 @@ function findProductPrice(products, name) {
     let mid = Math.floor((left + right) / 2);
     if (products[mid].name === name) {
       return products[mid].price;
-    } else if (mid > left) {
+    } else if (products[mid].name < name) {
       left = mid + 1;
     } else {
       right = mid - 1;
